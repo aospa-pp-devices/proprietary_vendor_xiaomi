@@ -10002,7 +10002,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qxr-V1-ndk",
+	name: "vendor.qti.hardware.qxr-V1-ndk_vendor",
+	stem: "vendor.qti.hardware.qxr-V1-ndk",
 	owner: "xiaomi",
 	strip: {
 		none: true,
