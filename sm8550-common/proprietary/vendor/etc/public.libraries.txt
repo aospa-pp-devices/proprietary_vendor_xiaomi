@@ -5,6 +5,7 @@ libcdsprpc.so
 libsdsprpc.so
 libfastcvopt.so
 libOpenCL.so
+libQEGA.qti.so
 libSNPE.so
 libmialgo_ai_vision.so
 libmialgo_utils.so

@@ -91,6 +91,7 @@
     <Include href="media_codecs_vendor_audio.xml" />
     <Include href="media_codecs_google_telephony.xml" />
     <Include href="media_codecs_c2_audio.xml" />
+    <Include href="media_codecs_dolby_audio.xml" />
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
@@ -333,7 +334,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="20480" />
             <Limit name="bitrate" range="1-160000000" />
-            <Limit name="frame-rate" range="1-20" />
+            <Limit name="frame-rate" range="1-480" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />
