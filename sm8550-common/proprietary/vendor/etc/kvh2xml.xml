@@ -143,6 +143,8 @@
       <VALUE val="0xad000084" name="VOIP_REMOTE_RECORD_SINGLE"/>
       <VALUE val="0xad000085" name="VOIP_REMOTE_RECORD_MULTI"/>
       <VALUE val="0xad000086" name="VOIP_REMOTE_RECORD_SURROUND"/>
+      <VALUE val="0xad001400" name="CUSTOM_ECNS_RAW" description="Used in NLPI use-cases for VUI with custom config"/>
+      <VALUE val="0xad001500" name="CUSTOM_NS_RAW" description="Used in LPI use-cases for VUI with custom config"/>
     </KEY>
     <KEY name="StreamPP_RX" id="0xaf000000" description="Rx Stream Post/Pre Processing Chain">
       <VALUE val="0xaf000001" name="StreamPP_Rx_Default"/>
@@ -507,6 +509,10 @@
       <VALUE val="0x1" name="0x1"/>
       <VALUE val="0x0" name="0x0"/>
     </KEY>
+    <KEY name="MISOUND_FX_DMX_MODULE_SWITCH" id="0x2e0000" description="Misoundfxdmxmoduleswitch">
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x0" name="0x0"/>
+    </KEY>
     <KEY name="SUPER_VOICE_VOLUME" id="0xfa000008" description="SuperVoiceVolume">
       <VALUE val="0x1" name="ON"/>
       <VALUE val="0x0" name="OFF"/>
@@ -650,6 +656,9 @@
     </TAG>
     <TAG id="0xc0001001" name="misound spk  module switch" description="misound spk module switch">
       <KEY id="0x10000" name="MISOUND_SPK_FX_Module_Switch"/>
+    </TAG>
+    <TAG id="0xc00003c" name="misound fx dmx module switch" description="misound fx dmx module switch">
+      <KEY id="0x2e0000" name="MISOUND_FX_DMX_MODULE_SWITCH"/>
     </TAG>
     <TAG id="0xc0001002" name="misound spk switch" description="misound spk switch">
       <KEY id="0xe2000000" name="MISOUND_SPK_FX_Switch"/>

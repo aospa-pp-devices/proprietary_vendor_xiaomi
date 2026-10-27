@@ -666,8 +666,14 @@
             "ApkTable" :[""]
         },
         {
+            "ApkFunctionType":"ForVideoLiveReduceFPS",
+            "ApkTable" :["air.tv.douyu.android",
+                         "com.duowan.kiwi"]
+        },
+        {
             "ApkFunctionType":"DisablePrivatePort",
-            "ApkTable" :[""]
+            "ApkTable" :["",
+                        "com.google.jetpackcamera"]
         },
         {
             "ApkFunctionType":"SetVideoStillToPreview",
