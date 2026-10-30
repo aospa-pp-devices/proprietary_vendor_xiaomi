@@ -365,7 +365,7 @@
                 "VendorOpMode": 36869,
                 // 0x8005, StreamConfigModeMiuiZslFront
                 "MialgoOpMode": 32773,
-                "LensFacing": 0,
+                "LensFacing": 1,
                 "Signature": "Single",
                 "BufferLimitCnt": 1,
                 "FlushWaitTimeMs": 4000,
