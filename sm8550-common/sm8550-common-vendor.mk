@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc \
+    vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/libnfc-nci-STM.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci-STM.conf \
@@ -1063,6 +1064,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.communicate@1.0 \
     android.hardware.bluetooth.audio-impl_qti \
     displayfeature.default \
+    vendor.xiaomi.hw.touchfeature@1.0-impl \
     libMiDispDevManager \
     libadaptivehdr \
     libagmdevice \
@@ -1167,6 +1169,7 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
     manifest_vendor.xiaomi.hardware.tidaservice.xml \
     vendor.qti.gnss-service.xml \
+    vendor.xiaomi.hw.touchfeature@1.0-service.xml \
     vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     ATFWD-daemon \
     adpl \
@@ -1284,6 +1287,7 @@ PRODUCT_PACKAGES += \
     fidoca \
     android.hardware.nfc@1.2-service-st \
     vendor.nxp.hardware.nfc@2.0-service \
+    vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor.xiaomi.sensor.communicate@1.0-service \
     mlipayd@1.1 \
     mtd@1.3 \

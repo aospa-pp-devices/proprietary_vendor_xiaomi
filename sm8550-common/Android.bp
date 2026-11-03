@@ -20790,6 +20790,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hw.touchfeature@1.0-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "liblog",
+                "libxml2",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "libbinder",
+                "vendor.xiaomi.hw.touchfeature@1.0",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@2.0",
+                "libmisight",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libMiDispDevManager",
     owner: "xiaomi",
     strip: {
@@ -22928,6 +22967,15 @@ prebuilt_etc_xml {
     name: "vendor.qti.gnss-service.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.qti.gnss-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hw.touchfeature@1.0-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -26539,6 +26587,44 @@ cc_prebuilt_binary {
                 "android.hardware.nfc@1.1",
                 "android.hardware.nfc@1.2",
                 "vendor.nxp.hardware.nfc@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hw.touchfeature@1.0-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libxml2",
+                "libcutils",
+                "libhidlbase",
+                "libbinder",
+                "libhardware",
+                "libhidltransport",
+                "libutils",
+                "vendor.xiaomi.hw.touchfeature@1.0",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@2.0",
+                "libmisight",
+                "libjsoncpp",
                 "libc++",
                 "libc",
                 "libm",
