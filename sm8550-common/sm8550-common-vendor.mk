@@ -1150,7 +1150,6 @@ PRODUCT_PACKAGES += \
     qtiradio-saidl.xml \
     vendor.dolby.hardware.dms.xml \
     vendor.qti.diag.hal.service.xml \
-    vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.qconfig@1.0-service.xml \
     vendor.qti.hardware.qxr-service.xml \
