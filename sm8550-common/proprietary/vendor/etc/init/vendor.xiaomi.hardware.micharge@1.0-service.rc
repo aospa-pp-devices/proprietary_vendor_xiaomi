@@ -120,7 +120,7 @@ on property:dev.bootcomplete=1
     chmod 0660 /sys/class/qcom-battery/input_suspend
     chmod 0660 /sys/class/qcom-battery/screen_unlock
     chmod 0660 /sys/class/qcom-battery/cool_mode
-    chmod 0660 /sys/class/qcom-battery/night_charging
+    chmod 0666 /sys/class/qcom-battery/night_charging
     chmod 0660 /sys/class/qcom-battery/bt_transfer_start
     chmod 0660 /sys/class/qcom-battery/wls_tx_speed
     chmod 0660 /sys/class/qcom-battery/wireless_chip_fw
